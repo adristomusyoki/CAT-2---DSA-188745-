@@ -20,3 +20,44 @@ Big O notation is used to describe the upper bound of an algorithm's complexity,
    - Example: Even if an algorithm performs well on average, Big O ensures it runs efficiently in the hardest scenarios.
 
 
+
+
+## 2. Arrays vs. Linked Lists
+
+Arrays and linked lists are fundamental data structures with different characteristics in terms of memory allocation, performance, and operations.
+
+### Memory Allocation
+
+- **Arrays**:
+  - Use contiguous memory allocation.
+  - The entire array's size must be known at compile-time.
+  - Size cannot be easily changed during runtime.
+
+- **Linked Lists**:
+  - Use dynamic memory allocation.
+  - Each node is allocated memory separately, leading to non-contiguous memory usage.
+  - Offers flexibility in size, as nodes can be added or removed dynamically.
+
+### Performance
+
+- **Arrays**:
+  - Provide constant time complexity `O(1)` for random access.
+  - Elements are stored contiguously and can be accessed directly via index.
+
+- **Linked Lists**:
+  - Provide sequential access.
+  - To access a node, you may need to traverse the list from the beginning, leading to `O(n)` time complexity for accessing elements.
+
+### Insertion and Deletion Operations
+
+- **Arrays**:
+  - Insertion: Adding an element to the array.
+  - Deletion: Removing an element from the array.
+  - Both operations can be costly (`O(n)`) if elements need to be shifted to maintain order.
+
+- **Linked Lists**:
+  - Insertion: Adding a new node to the linked list.
+  - Deletion: Removing an existing node from the linked list.
+  - Both operations are generally more efficient (`O(1)` for head/tail operations, `O(n)` for middle operations) compared to arrays.
+
+---
